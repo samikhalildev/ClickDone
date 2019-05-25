@@ -1,9 +1,9 @@
 import React from 'react'
-import { withStyles, ListItem, IconButton, ListItemIcon, ListItemSecondaryAction, ListItemText, Paper, FormControl, FormControlLabel, Checkbox, TextField, Button, Fab, Icon, Dialog, DialogActions, DialogContent, DialogTitle, Tooltip, Typography } from '@material-ui/core';
+import { withStyles, ListItem, ListItemIcon, ListItemText, Paper, Checkbox, Fab, Icon, Tooltip } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { green } from '@material-ui/core/colors';
 
-const TaskList = (props) => {
+const ToDoItem = (props) => {
 
     const { item, index } = props;
 
@@ -54,4 +54,4 @@ const TaskList = (props) => {
     )
 }
 
-export default TaskList;
+export default ToDoItem;

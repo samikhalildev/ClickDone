@@ -22,10 +22,10 @@ const getCurrentDate = () => {
 
     var emoji;
 
-    if ((AMPM == 'am' && hours >= 7 && hours <= 11) || (AMPM == 'pm' && hours == 12 || hours <= 6))
+    if ((AMPM === 'am' && hours >= 6 && hours <= 11) || (AMPM === 'pm' && hours === 12 || hours <= 5))
         emoji = `🌞`;
 
-    else if ((AMPM == 'pm' && hours >= 7 && hours <= 11) || (AMPM == 'am' && hours >= 0 && hours <= 6))
+    else if ((AMPM === 'pm' && hours >= 6 && hours <= 11) || (AMPM === 'am' && hours >= 0 && hours <= 5))
         emoji = `🌚`
     
     return `${weekDay}, ${day} ${month} ${year} at ${hours}:${minutes} ${AMPM} ${emoji}`;
